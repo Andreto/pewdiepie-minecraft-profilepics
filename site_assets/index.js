@@ -5,7 +5,7 @@ function generateImgs(key){
   console.log(key);
   imageContainer.innerHTML = "";
   for (var i in filenames) {
-    if (filenames[i].includes(key)) {
+    if (filenames[i].includes(key.toLowerCase())) {
       let imgElem = document.createElement('img');
       imgElem.src = 'high_res/' + filenames[i];
       imgElem.classList.add('profile-img');
