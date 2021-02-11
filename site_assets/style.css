@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 10px;
+  background: #000;
+}
+#image-container {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.profile-img {
+  width: 100%;
+}
+
+
+#search-key {
+  width: calc(100% - 30px);
+  height: 40px;
+  font-size: 24px;
+  padding-left: 10px;
+  font-family: helvetica;
+  margin: 10px;
+  background: #545454;
+  color: #fff;
+  border: none;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
